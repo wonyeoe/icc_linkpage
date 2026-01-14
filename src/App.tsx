@@ -1,3 +1,5 @@
+import SchoolLogo from "./assets/Emblem_T01.png";
+
 type LinkItem = {
   id: string;
   label: string;
@@ -17,34 +19,32 @@ function LinkButton({ item }: { item: LinkItem }) {
   return (
     <a
       href={item.href}
-      className="group relative flex w-full items-center justify-between rounded-2xl bg-blue-600 px-5 py-4 text-white shadow-sm transition hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-200"
+      className="flex w-full items-center justify-center rounded-2xl bg-blue-600 px-5 py-4 text-white"
     >
-      <div className="flex min-w-0 items-center gap-3">
-        <span className="min-w-0 truncate text-[15px] font-semibold">
-          {item.label}
-        </span>
-      </div>
-
-      <div className="ml-4 flex items-center gap-2 text-white/90">
-        <span className="text-xl leading-none">⋯</span>
-      </div>
+      <span className="text-[15px] font-semibold">{item.label}</span>
     </a>
+
   );
 }
 
+
 export default function App() {
   return (
-    <div className="min-h-dvh bg-white">
+    <div className="min-h-dvh bg-white font-sans">
       <div className="mx-auto flex w-full max-w-md flex-col items-center px-6 pb-16 pt-16">
         {/* 상단 로고/아이콘 */}
-        <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-full bg-blue-600">
-          <span className="h-0 w-0 border-l-[10px] border-r-[10px] border-t-[16px] border-l-transparent border-r-transparent border-t-white" />
+        <div className="mb-6 flex h-25 w-25">
+          <img
+            src={SchoolLogo}
+            alt="학교 로고"
+            className="h-full w-full object-cover"
+          />
         </div>
 
         {/* 타이틀 */}
         <h1 className="text-xl font-extrabold tracking-tight text-black">인하대학교</h1>
         <p className="mt-2 text-sm text-gray-500">
-          금융의 모든 것, 토스에서 간편하게
+          필수 정보 바로가기
         </p>
 
         {/* 링크 버튼 리스트 */}
