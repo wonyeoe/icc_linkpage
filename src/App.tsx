@@ -76,6 +76,26 @@ const text = {
       ja: "国別留学生会",
     },
   },
+  contact: {
+    title: {
+      ko: "국제지원팀",
+      en: "International Support Office",
+      zh: "国际支援组",
+      ja: "国際支援チーム",
+    },
+    phone: {
+      ko: "전화",
+      en: "Tel",
+      zh: "电话",
+      ja: "電話",
+    },
+    email: {
+      ko: "이메일",
+      en: "Email",
+      zh: "邮箱",
+      ja: "メール",
+    },
+  },
 };
 
 /* ---------------- 링크 데이터 ---------------- */
@@ -180,6 +200,19 @@ export default function App() {
           {links.map((item) => (
             <LinkButton key={item.id} item={item} />
           ))}
+        </div>
+
+        {/* 국제지원팀 정보 */}
+        <div className="mt-10 text-center text-sm text-gray-500 leading-relaxed">
+          <p className="font-medium text-gray-700">
+            {text.contact.title[lang]}
+          </p>
+          <p>
+            {text.contact.phone[lang]}: 032-860-7035~9
+          </p>
+          <p>
+            {text.contact.email[lang]}: interservice@inha.ac.kr
+          </p>
         </div>
       </div>
     </div>
