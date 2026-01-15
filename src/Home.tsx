@@ -125,7 +125,7 @@ function buildLinks(lang: Lang): LinkItem[] {
       id: "2",
       label: text.links.app[lang],
       href: "/apps",
-      external: false,
+      external: true,
     },
     {
       id: "3",
@@ -154,7 +154,7 @@ function buildLinks(lang: Lang): LinkItem[] {
     {
       id: "7",
       label: text.links.intl[lang],
-      href: "#",
+      href: "/international",
       external: true,
     },
   ];
