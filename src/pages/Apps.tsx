@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import type { Lang } from "../App";
 
 import KR from "../assets/flags/ko.png";
