@@ -29,8 +29,8 @@ const text = {
     ja: "仁荷大学",
   },
   subtitle: {
-    ko: "대학 필수 정보 바로가기",
-    en: "Essential University Links",
+    ko: "인하대학교 캠퍼스 생활 가이드",
+    en: "Inha Campus Guide",
     zh: "大学必备信息入口",
     ja: "大学必須情報へのリンク",
   },
