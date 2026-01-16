@@ -1,4 +1,3 @@
-// src/pages/International.tsx
 import type { Lang } from "../App";
 
 import KR from "../assets/flags/ko.png";
