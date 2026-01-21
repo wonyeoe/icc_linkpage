@@ -5,6 +5,11 @@ import US from "./assets/flags/us.png";
 import CN from "./assets/flags/cn.png";
 import JP from "./assets/flags/jp.png";
 
+import IT from "./assets/flags/it.png";
+import RU from "./assets/flags/rs.png";
+import VI from "./assets/flags/viet.png";
+import ID from "./assets/flags/id.png";
+
 import { Link } from "react-router-dom";
 import type { Lang } from "./App";
 
@@ -19,6 +24,10 @@ const languages: Language[] = [
   { code: "en", label: "English", flag: US },
   { code: "zh", label: "中文", flag: CN },
   { code: "ja", label: "日本語", flag: JP },
+  { code: "it", label: "Italiano", flag: IT },
+  { code: "ru", label: "Русский", flag: RU },
+  { code: "vi", label: "Tiếng Việt", flag: VI },
+  { code: "id", label: "Bahasa Indonesia", flag: ID },
 ];
 
 const text = {
@@ -27,12 +36,20 @@ const text = {
     en: "Inha University",
     zh: "仁荷大学",
     ja: "仁荷大学",
+    it: "Inha University",
+    ru: "Университет Инха",
+    vi: "Đại học Inha",
+    id: "Universitas Inha",
   },
   subtitle: {
     ko: "인하대학교 캠퍼스 생활 가이드",
     en: "Inha Campus Guide",
     zh: "大学必备信息入口",
     ja: "大学必須情報へのリンク",
+    it: "Guida alla vita nel campus Inha",
+    ru: "Гид по кампусу Инха",
+    vi: "Hướng dẫn sinh hoạt tại Inha",
+    id: "Panduan kehidupan kampus Inha",
   },
   links: {
     calendar: {
@@ -40,42 +57,70 @@ const text = {
       en: "Academic Calendar",
       zh: "学事日程",
       ja: "学事日程",
+      it: "Calendario accademico",
+      ru: "Академический календарь",
+      vi: "Lịch học vụ",
+      id: "Kalender akademik",
     },
     app: {
       ko: "학교 생활 필수 어플",
       en: "Essential Apps",
       zh: "必备应用",
       ja: "必須アプリ",
+      it: "App essenziali",
+      ru: "Полезные приложения",
+      vi: "Ứng dụng cần thiết",
+      id: "Aplikasi penting",
     },
     scholarship: {
       ko: "장학금",
       en: "Scholarships",
       zh: "奖学金",
       ja: "奨学金",
+      it: "Borse di studio",
+      ru: "Стипендии",
+      vi: "Học bổng",
+      id: "Beasiswa",
     },
     dormitory: {
       ko: "인하대학교 생활관",
       en: "Dormitory Information",
       zh: "宿舍信息",
       ja: "学生寮の案内",
+      it: "Informazioni sul dormitorio",
+      ru: "Общежитие",
+      vi: "Ký túc xá",
+      id: "Asrama",
     },
     club: {
       ko: "동아리 둘러보기",
       en: "Explore Clubs",
       zh: "查看社团",
       ja: "サークルを見る",
+      it: "Esplora i club",
+      ru: "Клубы",
+      vi: "Câu lạc bộ",
+      id: "Jelajahi klub",
     },
     career: {
       ko: "진로·취업 정보",
       en: "Career & Jobs",
       zh: "就业与发展",
       ja: "進路・就職",
+      it: "Carriera e lavoro",
+      ru: "Карьера и работа",
+      vi: "Việc làm & nghề nghiệp",
+      id: "Karier & pekerjaan",
     },
     intl: {
       ko: "국가별 유학생회",
       en: "International Student Groups",
       zh: "各国留学生会",
       ja: "国別留学生会",
+      it: "Gruppi di studenti internazionali",
+      ru: "Международные студенческие группы",
+      vi: "Hội sinh viên quốc tế",
+      id: "Kelompok mahasiswa internasional",
     },
   },
   contact: {
@@ -84,18 +129,30 @@ const text = {
       en: "International Support Office",
       zh: "国际支援组",
       ja: "国際支援チーム",
+      it: "Ufficio Supporto Internazionale",
+      ru: "Отдел международной поддержки",
+      vi: "Văn phòng hỗ trợ quốc tế",
+      id: "Kantor dukungan internasional",
     },
     phone: {
       ko: "전화",
       en: "Tel",
       zh: "电话",
       ja: "電話",
+      it: "Tel",
+      ru: "Тел.",
+      vi: "Điện thoại",
+      id: "Telepon",
     },
     email: {
       ko: "이메일",
       en: "Email",
       zh: "邮箱",
       ja: "メール",
+      it: "Email",
+      ru: "Email",
+      vi: "Email",
+      id: "Email",
     },
   },
   more: {
@@ -103,6 +160,10 @@ const text = {
     en: "More details",
     zh: "更多信息",
     ja: "詳しくはこちら",
+    it: "Maggiori dettagli",
+    ru: "Подробнее",
+    vi: "Xem thêm",
+    id: "Info lebih lanjut",
   },
 };
 
@@ -219,16 +280,10 @@ export default function Home({
 
       <div className="mx-auto flex w-full max-w-md flex-col items-center px-6 pb-16 pt-16">
         <div className="mb-6 h-24 w-24">
-          <img
-            src={SchoolLogo}
-            alt="학교 로고"
-            className="h-full w-full object-contain"
-          />
+          <img src={SchoolLogo} alt="학교 로고" className="h-full w-full object-contain" />
         </div>
 
-        <h1 className="text-xl font-extrabold tracking-tight text-black">
-          {text.title[lang]}
-        </h1>
+        <h1 className="text-xl font-extrabold tracking-tight text-black">{text.title[lang]}</h1>
         <p className="mt-2 text-sm text-gray-500">{text.subtitle[lang]}</p>
 
         <div className="mt-8 flex w-full flex-col gap-4">

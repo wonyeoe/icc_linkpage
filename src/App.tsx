@@ -4,7 +4,7 @@ import Home from "./Home";
 import AppsPage from "./pages/Apps";
 import InternationalPage from "./pages/International";
 
-export type Lang = "ko" | "en" | "zh" | "ja";
+export type Lang = "ko" | "en" | "zh" | "ja" | "it" | "ru" | "vi" | "id";
 
 export default function App() {
   const [lang, setLang] = useState<Lang>("ko");
