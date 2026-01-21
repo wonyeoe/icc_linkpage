@@ -4,7 +4,6 @@ import KR from "./assets/flags/ko.png";
 import US from "./assets/flags/us.png";
 import CN from "./assets/flags/cn.png";
 import JP from "./assets/flags/jp.png";
-
 import IT from "./assets/flags/it.png";
 import RU from "./assets/flags/rs.png";
 import VI from "./assets/flags/viet.png";
