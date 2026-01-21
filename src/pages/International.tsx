@@ -8,7 +8,7 @@ import JP from "../assets/flags/jp.png";
 import IT from "../assets/flags/it.png";
 import RU from "../assets/flags/rs.png";
 import VI from "../assets/flags/viet.png";
-import ID from "../assets/flags/Id.png";
+import ID from "../assets/flags/indo.png";
 
 /* ---------- 언어 선택 ---------- */
 

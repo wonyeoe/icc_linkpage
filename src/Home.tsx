@@ -7,7 +7,7 @@ import JP from "./assets/flags/jp.png";
 import IT from "./assets/flags/it.png";
 import RU from "./assets/flags/rs.png";
 import VI from "./assets/flags/viet.png";
-import ID from "./assets/flags/id.png";
+import ID from "./assets/flags/indo.png";
 
 import { Link } from "react-router-dom";
 import type { Lang } from "./App";
